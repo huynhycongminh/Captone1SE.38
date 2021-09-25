@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5 !important;
+  overflow-x: hidden;
+  border: 0;
+  outline: 0;
+  font-size: 75%;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: inherit;
+  opacity: 1;
+}
+
+
+#login {
+    position: relative;
+}
+
+.background-login {
+    opacity: 0.4;
+}
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 600px;
+    background-image: linear-gradient(to bottom, rgb(95, 95, 95), rgb(34, 34, 34));
+    padding: 32px;
+    opacity: 0.9;
+    border-radius: 8px;
+}
+
+.login-img {
+    width: 100px; 
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.heading {
+    color: #f5f5f5;
+    font-size: 2rem;
+    margin: 16px 0;
+    text-align: center;
+}
+
+#login-form {
+    font-size: 1.6rem;
+    color: #f5f5f5;
+    margin: 40px 0;
+}
+
+.form-group {
+    /* display: flex; */
+    margin-bottom: 28px;
+    /* flex-direction: column; */
+}
+
+.form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+    width: 100%;
+}
+  
+.form-control:hover {
+    border-color: #696969;
+}
+
+
+.form-label {
+    font-weight: 700;
+    padding-left: 12px;
+    line-height: 1.6rem;
+    font-size: 1.6rem;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+  
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+
+.form-submit {
+    padding: 8px 32px;
+    font-size: 1.8rem;
+    color: #f5f5f5;
+    background-color: black;
+    border: 1px black solid;
+    /* text-align: center; */
+    display: flex;
+    margin: auto;
+}
+
+
+.form-submit:hover {
+    border: 1px #f5f5f5 solid;
+}
+
+.forgot-password{
+    clear: right;
+    padding-top: 28px;
+    text-align: center;
+}
+
+.forgot-password a{
+    color: #f5f5f5;
+    font-size: 1.6rem;
+    text-decoration: none;
+}
