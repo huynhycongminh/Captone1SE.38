@@ -160,4 +160,8 @@ html {
         font-size: 1.6rem;
     }
 
+    #register-form {
+        padding: 16px;
+    }
+
 }

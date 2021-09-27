@@ -31,7 +31,7 @@
         <div class="header">
             <div class="menu">
               <nav class="navbar navbar-expand-sm navbar-light bg-light">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.html">
                   <img src="/image/logo.jpg" alt="" class="logo_header" />
                 </a>
                 <button
@@ -66,13 +66,14 @@
                       </div>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Book a test drive</a>
+                      <a class="nav-link" href="./RegisterTestDrive.html">Book a test drive</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Car Comparison</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Company</a>
+                      <!-- Gán tạm Login để test UI -->
+                      <a class="nav-link" href="./login.html">Company</a>
                     </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
@@ -131,21 +132,23 @@
                 <!-- Choose Vehicle Type -->
                 <div class="form-group col l-6 m-6 c-12" >
                     <label for="vehicletype" class="form-label">Choose Vehicle Type</label>
-                    <select name="vehicletype"  id="vehicletype" required class="form-control" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
-                        <option value="AllDestinations">All Destination</option>
+                    <select name="vehicletype"  id="vehicletype" rules="requiredSelect" class="form-control" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
+                        <option value="">All Vehicle Type</option>
                         <option value="Asia">Asia</option>
                         <option value="American">American</option>
                     </select>
+                    <span class="form-message"></span>
                 </div>
         
                 <!-- Choose Model -->
                 <div class="form-group col l-6 m-6 c-12" >
                     <label for="vehiclemodel" class="form-label">Choose Vehicle Model</label>
-                    <select name="vehiclemodel"  id="vehiclemodel" required class="form-control" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
-                        <option value="AllDestinations">All Destination</option>
+                    <select name="vehiclemodel"  id="vehiclemodel" rules="requiredSelect" class="form-control" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
+                        <option value="">All Vehicle Model</option>
                         <option value="Asia">Asia</option>
                         <option value="American">American</option>
                     </select>
+                    <span class="form-message"></span>
                 </div>
             </div>
     

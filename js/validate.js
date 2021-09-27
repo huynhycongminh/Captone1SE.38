@@ -27,6 +27,9 @@ function Validate(formSelector){
         required: function (value){
             return value.trim() ? undefined : 'Please enter this field';
         },
+        requiredSelect: function (value){
+            return value.trim() ? undefined : 'Please choose this field';
+        },
         email: function (value){
             const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             return regex.test(value) ? undefined : 'Please enter this field is email';
@@ -148,7 +151,7 @@ function Validate(formSelector){
 
         // Khi không có lỗi thì submit form
         if (isValid) {
-            // Nếu có hàm xử lý submit thì sử dụng hàm submit
+            // Nếu có hàm xử lý submit thì sử dụng hàm xử lý submit
             if (typeof _this.onSubmit === 'function'){
                 var enableInputs = formElement.querySelectorAll('[name]');
                     var formValues = Array.from(enableInputs).reduce(function (values, input) {
