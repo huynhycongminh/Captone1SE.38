@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5 !important;
+  overflow-x: hidden;
+  border: 0;
+  outline: 0;
+  /* font-size: 75%; */
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: inherit;
+  opacity: 1;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.pl-12 {
+    padding-left: 16px;
+}
+
+.pr-12 {
+    padding-right: 16px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main {
+    /* background: #f1f1f1; */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.banner {
+    
+    overflow: hidden;
+}
+
+.background-banner {
+    padding-top: 44%;
+    background: url('../image/company/companyBanner.png') center / cover no-repeat;
+    position: relative;
+    transition: all linear 0.6s;
+}
+
+.background-banner:hover {
+    transform: scale(1.2);
+    opacity: 0.75;
+}
+
+.banner-text {
+    font-size: 60px;
+    color: #f5f5f5;
+    position: absolute;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section .heading{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.section .sub-heading{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.section .description{
+    font-size: 20px;
+    text-align: left;
+}
+
+.forward-looking {
+    background-color: #000;
+    color: #f5f5f5;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.forward-looking .description {
+    font-size: 48px;
+
+}
+
+
+
+.four-points .col {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.four-points-item {
+    overflow: hidden;
+}
+
+
+.imgBrand {
+    width: 100%;
+    position: relative;
+    transition: all linear 0.6s;
+}
+
+.imgBrand:hover {
+    z-index: 1;
+    transform: scale(1.1);
+}
+
+.brand-text {
+    position: absolute;
+    left: 12%;
+    bottom: 12%;
+    z-index: 1;
+    font-size: 40px;
+    color: #f5f5f5;
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.7);
+}
+
+
+.human-centricity {
+    background-color: #000;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    color: #f5f5f5;
+}
+
+.human-centricity-img {
+    width: 100%;
+    border: 2px solid #777777;
+    margin-top: 16px;
+}
+
+.human-centricity .description {
+    padding: 40px 80px 0;
+    text-align: justify;
+}
+
+.four-points2 {
+    
+}
+
+.four-points2-img{
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+.four-points2-img img{
+    width: 100%;
+    border: 1px solid #777777;
+    transition: all linear 0.6s;
+}
+
+.four-points2-img img:hover {
+    transform: scale(1.2);
+}
+
+.four-points2 .row:nth-child(2n+1) {
+    flex-direction: row-reverse;
+}
+
+.four-points2 .description {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: justify;
+}
+
+
+
+/* RESPONSIVE ON MOBILE */
+/* Mobile & Tablet */
+@media (max-width: 63.9375em){ /*1023px = 63.9375em*/
+    .background-banner {
+        padding-top: 52%;
+    }
+    .section .heading {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .section .sub-heading{
+        font-size: 24px;
+    }
+
+    
+}
+
+/*Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em){ /*740px = 46.25em*/  /*1023px = 63.9375em*/
+    .banner-text {
+        font-size: 48px;
+    } 
+
+    .forward-looking {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .four-points2 .description {
+        font-size: 16px;
+        line-height: 16px;
+        text-align: justify;
+    }
+
+}
+
+/* Mobile*/
+@media (max-width: 46.1875em){ /*739px = 46.1875em*/
+    .banner-text {
+        font-size: 24px;
+    } 
+
+    .forward-looking .description {
+        font-size: 20px;
+        padding: 0 8px;
+    }
+
+    .section .sub-heading{
+        margin-top: 12px;
+    }
+
+    .four-points2 .row{
+        flex-direction: row;
+    }
+
+    .forward-looking {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .human-centricity .description {
+        padding: 40px 16px 0;
+    }
+
+}
+

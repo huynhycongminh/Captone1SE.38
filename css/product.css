@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5 !important;
+  overflow-x: hidden;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: inherit;
+  opacity: 1;
+}
+
+.mb-32 {
+    margin-bottom: 32px;
+}
+
+.mb-64 {
+    margin-bottom: 64px;
+}
+
+.pl-12 {
+    padding-left: 16px;
+}
+
+.pr-12 {
+    padding-right: 16px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main {
+    background: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.product-img-main {
+    padding-top: 44%;
+    background: center/ cover no-repeat;
+}
+
+.section {
+    padding: 60px 16px;
+}
+
+.section .heading{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.section .sub-heading{
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.section .description{
+    font-size: 24px;
+    text-align: left;
+}
+
+.list-info {
+    margin: 32px 0;
+}
+
+.item-info {
+    text-align: center;
+}
+
+.item-info .sub-heading {
+    height: 72px;
+}
+
+.item-info-img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.item-info-img img {
+    transition: all linear 0.4s;
+}
+
+.item-info-img img:hover {
+    transform: scale(1.1);
+}
+
+.model-3D {
+    position: relative;
+    background-color: #fff;
+    border-top: 1px solid rgb(75, 75, 75);
+    border-bottom: 1px solid rgb(75, 75, 75);
+}
+
+.model-3D-img {
+    width: 100%;
+    transition: all linear 4s;
+}
+
+.model-3D-img:hover {
+    transform: rotateY(180deg);
+}
+
+.guide-use {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.guide-use-text {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+
+/* RESPONSIVE ON MOBILE */
+/* Mobile & Tablet */
+@media (max-width: 63.9375em){ /*1023px = 63.9375em*/
+    .section .heading {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .section .sub-heading{
+        font-size: 24px;
+    }
+
+    .item-info .sub-heading {
+        height: unset;
+        margin-top: 12px;
+    }
+
+    .item-info .description{
+        text-align: justify;
+    }
+}
+
+/*Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em){ /*740px = 46.25em*/  /*1023px = 63.9375em*/
+    .list-info {
+        max-width: 644px;
+        margin: auto;
+    }
+
+}
+
+/* Mobile*/
+@media (max-width: 46.1875em){ /*739px = 46.1875em*/
+    
+    
+}
+
