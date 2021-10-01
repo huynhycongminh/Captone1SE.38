@@ -19,7 +19,7 @@ html {
   opacity: 1;
 }
 
-.grid.wide {
+.container.wide {
     max-width: 900px;
     margin: 0 auto;
 }

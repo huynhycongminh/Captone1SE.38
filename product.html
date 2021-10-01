@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register For a Test Drive Car</title>
+    <title>Product</title>
     <link rel="shortcut icon" type="image/jpg" href="./image/logo.jpg"/>
 
     <link rel="stylesheet" href="/css/style.css" />
@@ -22,7 +22,6 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/product.css">
 </head>
 <body>
@@ -88,7 +87,7 @@
         </div>
 
         <!-- Info Product -->
-        <div class="grid wide section info-product">
+        <div class="container section info-product">
             <h1 class="heading">
                 Progress is not just felt.<br/>
                 It is experienced.<br/>
@@ -105,63 +104,65 @@
         </div>
 
     </h2>
-        <div class="grid">
+        <div class="">
             <div class="row list-info">
-                <div class="col l-4 m-12 c-12 mb-32 item-info">
-                    <div class="item-info-img">
-                        <img src="./image/product/Modul10_Blinker_1.png" alt="" class="">
-                    </div>
-                    <h2 class="sub-heading">
-                        Groundbreaking brilliance.<br/> 
-                        Expressive look.
-                    </h2>
-                    <p class="description">
-                        The optional HD Matrix LED headlights with dynamic
-                        indicator light impress from two different perspectives
-                        They provide the driver with optimum road lighting
-                        without dazzling oncoming traffic, and maximise the A
-                        Sedan's effective team width thanks to the outward
-                        focus of the characteristic lighting segments
-                    </p>
+                <div class="col-lg-4 col-md-12 col-12 mb-32 item-info">
+                  <div class="item-info-img">
+                      <img src="./image/product/Modul10_Blinker_1.png" alt="">
+                  </div>
+                  <h2 class="sub-heading">
+                      Groundbreaking brilliance.<br/> 
+                      Expressive look.
+                  </h2>
+                  <p class="description">
+                      The optional HD Matrix LED headlights with dynamic
+                      indicator light impress from two different perspectives
+                      They provide the driver with optimum road lighting
+                      without dazzling oncoming traffic, and maximise the A
+                      Sedan's effective team width thanks to the outward
+                      focus of the characteristic lighting segments
+                  </p>
                 </div>
-                <div class="col l-4 m-12 c-12 mb-32 item-info">
-                    <div class="item-info-img">
-                        <img src="./image/product/Ambientlight_AA6.png" alt="" class="">
-                    </div>
-                    <h2 class="sub-heading">Mood enhancer</h2>
-                    <p class="description">
-                        The optional contour ambient light package creates a unique atmosphere 
-                        and gives the interior of the A6 Sedan a fascinating ambience, 
-                        characterised by a sense of well-being Precise contour light guides 
-                        accentuate the instrument panel, central console and other striking 
-                        design structures in 30 different colour tones with continuous dimming
-                    </p>
+                <div class="col-lg-4 col-md-12 col-12 mb-32 item-info">
+                  <div class="item-info-img">
+                    <img src="./image/product/Ambientlight_AA6.png" alt="" class="">
+                  </div>
+                  <h2 class="sub-heading">
+                    Mood enhancer
+                  </h2>
+                  <p class="description">
+                      The optional contour ambient light package creates a unique atmosphere 
+                      and gives the interior of the A6 Sedan a fascinating ambience, 
+                      characterised by a sense of well-being Precise contour light guides 
+                      accentuate the instrument panel, central console and other striking 
+                      design structures in 30 different colour tones with continuous dimming
+                  </p>
                 </div>
-                <div class="col l-4 m-12 c-12 mb-32 item-info">
-                    <div class="item-info-img">
-                        <img src="./image/product/CLASSIC.png" alt="" class="">
-                    </div>
-                    <h2 class="sub-heading">
-                        Reduced design.<br/>
-                        Maximum ease of operation.
-                    </h2>
-                    <p class="description">
-                        The high-resolution 10.1 inch and 8.6-inch HD MMI
-                        High touch displays with touch respome available on
-                        request, fit seamlessly into the elegant instrument
-                        panel and are optimally tailored to the needs of the
-                        driver. On the upper display, the driver manages
-                        information entetainment and navigation services, on
-                        the lower display, text input, air conditioning and
-                        various comfort functions can be controlled
-                    </p>
+                <div class="col-lg-4 col-md-12 col-12 mb-32 item-info">
+                  <div class="item-info-img">
+                    <img src="./image/product/CLASSIC.png" alt="" class="">
+                  </div>
+                  <h2 class="sub-heading">
+                      Reduced design.<br/>
+                      Maximum ease of operation.
+                  </h2>
+                  <p class="description">
+                      The high-resolution 10.1 inch and 8.6-inch HD MMI
+                      High touch displays with touch respome available on
+                      request, fit seamlessly into the elegant instrument
+                      panel and are optimally tailored to the needs of the
+                      driver. On the upper display, the driver manages
+                      information entetainment and navigation services, on
+                      the lower display, text input, air conditioning and
+                      various comfort functions can be controlled
+                  </p>
                 </div>
             </div>
         </div>
 
        <!-- 3D Model -->
         <div class="model-3D">
-            <div class="grid wide ">
+            <div class="container">
                 <img src="./image/product/a6_3d_model.PNG" alt="3D model" class="model-3D-img">
                 <div class="guide-use">
                     <span class="guide-use-text">drag to use</span>
@@ -333,17 +334,5 @@
         </div>
     <!-- </div> -->
 
-
-    <script src="./js/validate.js"></script>
-    <script>
-      // Dòng 152 và 182 bên file Validate.js
-      // Hàm xử lý submit dữ liệu - Nếu muốn submit mặc định của form thì xóa bỏ hàm này
-        var formRegister = new Validate('#register-form');
-        // Hàm xử lý submit dữ liệu
-        formRegister.onSubmit =  function(data){
-          // Xử lý dữ liệu nhập vào
-          console.log(data);
-        }
-    </script>
 </body>
 </html>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register For a Test Drive Car</title>
+    <link rel="shortcut icon" type="image/jpg" href="./image/logo.jpg"/>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/css/slick-theme.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/carComparison.css">
+</head>
+<body>
+    <!-- <div class="main"> -->
+        <!-- header -->
+        <div class="header">
+            <div class="menu">
+              <nav class="navbar navbar-expand-sm navbar-light bg-light">
+                <a class="navbar-brand" href="./index.html">
+                  <img src="/image/logo.jpg" alt="" class="logo_header" />
+                </a>
+                <button
+                  class="navbar-toggler d-lg-none"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapsibleNavId"
+                  aria-controls="collapsibleNavId"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="dropdownId"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        >All Model</a
+                      >
+                      <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Audi A3</a>
+                        <a class="dropdown-item" href="#">Audi A6</a>
+                        <a class="dropdown-item" href="#">Audi Q2</a>
+                        <a class="dropdown-item" href="#">Audi Q3</a>
+                        <a class="dropdown-item" href="#">Audi Q5</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./RegisterTestDrive.html">Book a test drive</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Car Comparison</a>
+                    </li>
+                    <li class="nav-item">
+                      <!-- Gán tạm Login để test UI -->
+                      <a class="nav-link" href="./company.html">Company</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <i class="fa fa-search search_icon" aria-hidden="true"></i>
+                  </form>
+                </div>
+              </nav>
+            </div>
+        </div>
+
+        <!-- banner top -->
+        <div class="banner-top" style="background-image: url('./image/carComparison/bannerTop.png');">
+            <h1 class="heading-func">CAR COMPARISON</h1>
+        </div>
+
+        
+        <div class="container compare">
+            <div class="row add-car">
+              <!-- Add class "selected" when you selected model need Compare
+                 to hide Plus Image -->
+                <div class="col-lg-6 col-md-6 col-6 add-car-plus">
+                    <img src="./image/carComparison/plusImg.png" alt="Add Car">
+                </div>
+                <div class="col-lg-6 col-md-6 col-6 add-car-plus">
+                    <img src="./image/carComparison/plusImg.png" alt="Add Car">
+                </div>
+            </div>
+
+            <!-- Info Model -->
+            <div class="row">
+              <!-- Add class "selected" when you selected model need Compare
+                 to display Model Image and Name Model-->
+                <div class="col-lg-6 col-md-6 col-6 car-model ">
+                    <div class="car-model-img">
+                        <img src="./image/carComparison/ModelA4.png" alt="Car Model">
+                    </div>
+                    <h2 class="car-model-name">Audi A4</h2>
+                </div>
+                <div class="col-lg-6 col-md-6 col-6 car-model ">
+                    <div class="car-model-img">
+                        <img src="./image/carComparison/ModelA6.png" alt="Car Model">
+                    </div>
+                    <h2 class="car-model-name">Audi A6</h2>
+                </div>
+            </div>
+        </div>
+
+        <ul class="info-detail-list section container">
+          <li class="info-detail-item mb-32">
+              <h2 class="info-detail-heading sub-heading">Dimensions - Weight</h2>
+              <ul class="info-detail">
+                  <li class="row">
+                      <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Khối lượng</label> 
+                      <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4000kg</label> 
+                      <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8000kg</label> 
+                  </li>
+                  <li class="row">
+                    <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Chiều dài</label> 
+                    <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4m</label> 
+                    <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8m</label> 
+                  </li>
+                  <li class="row">
+                    <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Khối lượng</label> 
+                    <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4000kg</label> 
+                    <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8000kg</label> 
+                  </li>
+                  <li class="row">
+                    <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Chiều dài</label> 
+                    <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4m</label> 
+                    <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8m</label> 
+                  </li>
+              </ul>
+          </li>
+          <li class="info-detail-item mb-32">
+            <h2 class="info-detail-heading sub-heading">Engine - Gearbox</h2>
+            <ul class="info-detail">
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Khối lượng</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4000kg</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8000kg</label> 
+              </li>
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Chiều dài</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4m</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8m</label> 
+              </li>
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Khối lượng</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4000kg</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8000kg</label> 
+              </li>
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Chiều dài</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4m</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8m</label> 
+              </li>
+            </ul>
+          </li>
+          <li class="info-detail-item mb-32">
+            <h2 class="info-detail-heading sub-heading">Exterior</h2>
+            <ul class="info-detail">
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Khối lượng</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4000kg</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8000kg</label> 
+              </li>
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Chiều dài</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4m</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8m</label> 
+              </li>
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Khối lượng</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4000kg</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8000kg</label> 
+              </li>
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Chiều dài</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4m</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8m</label> 
+              </li>
+            </ul>
+          </li>
+          <li class="info-detail-item mb-32">
+            <h2 class="info-detail-heading sub-heading">Furniture</h2>
+            <ul class="info-detail">
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Khối lượng</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4000kg</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8000kg</label> 
+              </li>
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Chiều dài</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4m</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8m</label> 
+              </li>
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Khối lượng</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4000kg</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8000kg</label> 
+              </li>
+              <li class="row">
+                <label for="" class="col-lg-2 col-md-2 col-2 info-detail-name">Chiều dài</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-first">4m</label> 
+                <label for="" class="col-lg-5 col-md-5 col-5 info-detail-desc-second">8m</label> 
+              </li>
+            </ul>
+          </li> 
+        </ul>
+
+        <!-- banner bottom -->
+        <div class="banner-bottom" style="background-image: url('./image/carComparison/bannerBot.jpg');">
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="footer-wrap">
+              <div class="footer-component main-component">
+                <div class="footer-row">
+                  <span class="footer-p p-title">
+                    ONLINE SHOWROOM <br>
+                    WITH 3D CAR
+                  </span>
+                <div class="footer-row">
+                  <span class="footer-p ">
+                    Huynh Y Cong Minh
+                  </span>
+                </div>
+                <div class="footer-row">
+                  <span class="footer-p ">
+                    Pham Hong Thuan
+                  </span>
+                </div>
+                <div class="footer-row">
+                  <span class="footer-p ">
+                    Nguyen Ngoc Ny
+                  </span>
+                </div>
+                <div class="footer-row">
+                  <span class="footer-p ">
+                    Bui Duc Duong
+                  </span>
+                </div>
+              </div>
+      
+          </div>
+          <div class="footer-component">
+            <div class="footer-row">
+              <span class="footer-p p-title">
+                Model
+              </span>
+            <div class="footer-row">
+              <a href=""  class="footer-p  quick-link">
+                Audi A4
+              </a>
+            </div>
+            <div class="footer-row">
+              <a  href="" class="footer-p quick-link">
+                Audi A6
+              </a>
+            </div>
+            <div class="footer-row">
+              <a  href=""class="footer-p quick-link">
+                Audi A7
+              </a>
+            </div>
+            <div class="footer-row">
+              <a  href="" class="footer-p quick-link">
+                Audi A8
+              </a>
+            </div>
+            <div class="footer-row">
+              <a  href="" class="footer-p quick-link">
+                Audi Q2
+              </a>
+            </div>
+            <div class="footer-row">
+              <a href="" class="footer-p quick-link">
+                Audi Q3
+              </a>
+            </div>
+            <div class="footer-row">
+              <a href="" class="footer-p quick-link">
+                Audi Q5
+              </a>
+            </div>
+          </div>
+        </div>
+          <div class="footer-component">
+            <div class="footer-row">
+              <span class="footer-p p-title">
+                Service
+              </span>
+            <div class="footer-row">
+              <a href="" class="footer-p quick-link">
+                Book a test drive
+              </a>
+            </div>
+            <div class="footer-row">
+              <a href="" class="footer-p quick-link">
+                Car Comparison
+              </a>
+            </div>
+          </div>
+        </div>
+          <div class="footer-component">
+            <div class="footer-row">
+              <span class="footer-p p-title">
+                Contact
+              </span>
+            <div class="footer-row">
+              <span class="footer-p ">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <a href="" class="footer-p quick-link">Hotline: 0357359239</a>
+              </span>
+            </div>
+            <div class="footer-row">
+              <span class="footer-p ">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <a href="" class="footer-p quick-link">dduong0311@gmail.com
+                </a>
+              </span>
+            </div>
+            <div class="footer-row footer-social">
+              <a href="" class="social-link">
+                <img src="/image/fb.png" alt="" class="social-img">
+              </a>
+              <a href="" class="social-link">
+                <img src="/image/youtube.jfif" alt="" class="social-img">
+              </a>
+              <a href="" class="social-link">
+                <img src="/image/instagram.png" alt="" class="social-img">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+    <!-- </div> -->
+
+    <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        const infoDetailHeadings = $$('.info-detail-heading');
+        const infoDetailItems = $$('.info-detail-item');
+        const infoDetails = $$('.info-detail');
+
+
+        infoDetailHeadings.forEach((infoDetailHeading, index) => {
+            const infoDetailItem = infoDetailItems[index];
+            const infoDetail = infoDetails[index];
+            infoDetailHeading.onclick = function(){
+                
+                infoDetailItem.classList.toggle('active');
+                infoDetail.classList.toggle('active');
+
+            }
+        });
+    </script>
+</body>
+</html>

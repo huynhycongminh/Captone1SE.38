@@ -34,7 +34,7 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    height: 600px;
+    min-height: 600px;
     background-image: linear-gradient(to bottom, rgb(95, 95, 95), rgb(34, 34, 34));
     padding: 32px;
     opacity: 0.9;

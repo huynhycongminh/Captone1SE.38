@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register For a Test Drive Car</title>
+    <title>Product Information Detail</title>
     <link rel="shortcut icon" type="image/jpg" href="./image/logo.jpg"/>
 
     <link rel="stylesheet" href="/css/style.css" />
@@ -22,7 +22,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/registerTestDrive.css">
+    <link rel="stylesheet" href="./css/productDetail.css">
 </head>
 <body>
     <!-- <div class="main"> -->
@@ -68,7 +68,7 @@
                       <a class="nav-link" href="./RegisterTestDrive.html">Book a test drive</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./product.html">Car Comparison</a>
+                      <a class="nav-link" href="#">Car Comparison</a>
                     </li>
                     <li class="nav-item">
                       <!-- Gán tạm Login để test UI -->
@@ -82,86 +82,122 @@
               </nav>
             </div>
         </div>
-        <!-- Banner -->
-        <div class="banner">
-            <img src="./image/bannerRegisterTestDrive.jpg" width="100%" alt="Audi Banner">
-            <h2 class="banner-text">Arrange A Test Drive</h2>
+
+        <!-- List main info -->
+        <ul class="main-info-list container p-rl-0">
+            <li class="main-info-item"><a href="#">Audi A4</a></li>
+            <li class="main-info-item"><a href="#">Specification</a></li>
+            <li class="main-info-item"><a href="#">Image</a></li>
+        </ul>
+        <!-- banner top -->
+        <div class="banner-top" style="background-image: url('./image/productDetail/ss.jpg');">
         </div>
-        <!-- Form Register Test Drive -->
-        <form action="" method="post" id="register-form" class="container wide">
-            <div class="heading">
-                <h1 class="heading">PLEASE COMPLETE INFORMATION BELLOW TO REGISTER</h1>
-            </div>
-            <div class="spacer"></div>
-            <!-- FullName -->
-            <div class="row">
-                <div class="form-group col-lg-12 col-md-12 col-12" >
-                    <label for="fullname" class="form-label">Full Name</label>
-                    <input id="fullname" rules="required" name="fullname" type="text" placeholder="Eg: Joe Biden" class="form-control">
-                    <span class="form-message"></span>
+
+        <h1 class="name-model">Audi A6</h1>
+
+       <!-- 3D Model -->
+        <div class="model-3D">
+            <div class="container">
+                <img src="./image/product/a6_3d_model.PNG" alt="3D model" class="model-3D-img">
+                <div class="guide-use">
+                    <span class="guide-use-text">drag to use</span>
+                    <img src="./image/product/360_view_30px.png" alt="360 icon" class="guide-use-icon"></img>
                 </div>
             </div>
-    
-            <div class="row">
-                <!-- Phone Number -->
-                <div class="form-group Col-lg-6 col-md-6 col-12" >
-                    <label for="phonenumber" class="form-label">Phone Number</label>
-                    <input id="phonenumber" rules="required|phone" name="phonenumber" type="text" placeholder="Eg:+84 123 456 789" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-        
-                <!-- Email -->
-                <div class="form-group Col-lg-6 col-md-6 col-12" >
-                    <label for="email" class="form-label">Email</label>
-                    <input id="email" rules="required|email" name="text" type="text" placeholder="VD: email@domain.com" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-            </div>
-    
-            <!-- Address -->
-            <div class="row">
-                <div class="form-group col-lg-12 col-md-12 col-12" >
-                    <label for="address" class="form-label">Address</label>
-                    <input id="address" rules="required" name="address" type="text" placeholder="Your Address" class="form-control">
-                    <span class="form-message"></span>
-                </div>
-            </div>
-    
-            <div class="row">
-                <!-- Choose Vehicle Type -->
-                <div class="form-group Col-lg-6 col-md-6 col-12" >
-                    <label for="vehicletype" class="form-label">Choose Vehicle Type</label>
-                    <select name="vehicletype"  id="vehicletype" rules="requiredSelect" class="form-control" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
-                        <option value="">All Vehicle Type</option>
-                        <option value="Asia">Asia</option>
-                        <option value="American">American</option>
-                    </select>
-                    <span class="form-message"></span>
-                </div>
-        
-                <!-- Choose Model -->
-                <div class="form-group Col-lg-6 col-md-6 col-12" >
-                    <label for="vehiclemodel" class="form-label">Choose Vehicle Model</label>
-                    <select name="vehiclemodel"  id="vehiclemodel" rules="requiredSelect" class="form-control" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
-                        <option value="">All Vehicle Model</option>
-                        <option value="Asia">Asia</option>
-                        <option value="American">American</option>
-                    </select>
-                    <span class="form-message"></span>
-                </div>
-            </div>
-    
-    
-            <div class="row">
-                <!-- Note -->
-                <div class="form-group col-lg-12 col-md-12 col-12" >
-                    <label for="note" class="form-label">Note</label>
-                    <textarea name="note" id="note" cols="30" rows="3" placeholder="Enter note..." class="form-control" style="height: unset;"></textarea>
-                </div>
-            </div>
-    
-            <button class="form-submit">SEND</button>
-        </form> 
+        </div>
+
+        <ul class="info-detail-list section container">
+            <li class="info-detail-item mb-32">
+                <h2 class="info-detail-heading sub-heading">Dimensions - Weight</h2>
+                <ul class="info-detail">
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
+                    </li>
+                </ul>
+                
+            </li>
+            <li class="info-detail-item mb-32">
+                <h2 class="info-detail-heading sub-heading">Engine - Gearbox</h2>
+                <ul class="info-detail">
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
+                    </li>
+                </ul>
+            </li>
+            <li class="info-detail-item mb-32">
+                <h2 class="info-detail-heading sub-heading">Exterior</h2>
+                <ul class="info-detail">
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
+                    </li>
+                </ul>
+            </li>
+            <li class="info-detail-item mb-32">
+                <h2 class="info-detail-heading sub-heading">Furniture</h2>
+                <ul class="info-detail">
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
+                    </li>
+                    <li class="row">
+                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
+                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- banner bottom -->
+        <div class="banner-bottom" style="background-image: url('./image/productDetail/ss2.jpg');">
+        </div>
+
         <!-- Footer -->
         <div class="footer">
             <div class="footer-wrap">
@@ -288,17 +324,25 @@
         </div>
     <!-- </div> -->
 
-
-    <script src="./js/validate.js"></script>
     <script>
-      // Dòng 152 và 182 bên file Validate.js
-      // Hàm xử lý submit dữ liệu - Nếu muốn submit mặc định của form thì xóa bỏ hàm này
-        var formRegister = new Validate('#register-form');
-        // Hàm xử lý submit dữ liệu
-        formRegister.onSubmit =  function(data){
-          // Xử lý dữ liệu nhập vào
-          console.log(data);
-        }
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        const infoDetailHeadings = $$('.info-detail-heading');
+        const infoDetailItems = $$('.info-detail-item');
+        const infoDetails = $$('.info-detail');
+
+
+        infoDetailHeadings.forEach((infoDetailHeading, index) => {
+            const infoDetailItem = infoDetailItems[index];
+            const infoDetail = infoDetails[index];
+            infoDetailHeading.onclick = function(){
+                
+                infoDetailItem.classList.toggle('active');
+                infoDetail.classList.toggle('active');
+
+            }
+        });
     </script>
 </body>
 </html>
