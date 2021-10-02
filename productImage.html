@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Information Detail</title>
+    <title>Product Image</title>
     <link rel="shortcut icon" type="image/jpg" href="./image/logo.jpg"/>
 
     <link rel="stylesheet" href="/css/style.css" />
@@ -22,7 +22,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/productDetail.css">
+    <link rel="stylesheet" href="./css/productImage.css">
 </head>
 <body>
     <!-- <div class="main"> -->
@@ -85,118 +85,148 @@
 
         <!-- List main info -->
         <ul class="main-info-list container p-rl-0">
-            <li class="main-info-item active"><a href="#">Audi A4</a></li>
+            <li class="main-info-item"><a href="#">Audi A4</a></li>
             <li class="main-info-item"><a href="#">Specification</a></li>
-            <li class="main-info-item"><a href="#">Image</a></li>
+            <li class="main-info-item active"><a href="#">Image</a></li>
         </ul>
+
         <!-- banner top -->
-        <div class="banner-top" style="background-image: url('./image/productDetail/ss.jpg');">
+        <div class="banner-top" style="background-image: url('./image/exterior/bannerTop.jpg');">
+            <h1 class="heading">EVERY CAR IS A WORK OF ART</h1>
         </div>
 
-        <h1 class="name-model">Audi A6</h1>
-
-       <!-- 3D Model -->
-        <div class="model-3D">
-            <div class="container">
-                <img src="./image/product/a6_3d_model.PNG" alt="3D model" class="model-3D-img">
-                <div class="guide-use">
-                    <span class="guide-use-text">drag to use</span>
-                    <img src="./image/product/360_view_30px.png" alt="360 icon" class="guide-use-icon"></img>
+        <div class="container-fluid wide">
+            <div class="tabs">
+                <div class="tab-item active">Exterior</div>
+                <div class="tab-item">Furniture</div>
+                <div class="line"></div>
+            </div>
+            <div class="tab-content">
+                <div class="exterior tab-pane active">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/exterior/1.png" alt="Exterior Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/exterior/2.jpg" alt="Exterior Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/exterior/3.png" alt="Exterior Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/exterior/4.png" alt="Exterior Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/exterior/5.jpg" alt="Exterior Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/exterior/6.png" alt="Exterior Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/exterior/7.png" alt="Exterior Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/exterior/8.png" alt="Exterior Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/exterior/9.png" alt="Exterior Image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/furrniture/1.png" alt="Furniture Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/furrniture/2.png" alt="Furniture Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/furrniture/3.png" alt="Furniture Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/furrniture/4.png" alt="Furniture Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/furrniture/5.png" alt="Furniture Image">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-16 tab-pane-item ">
+                            <div class="tab-pane-item-img">
+                                <img src="./image/furrniture/6.png" alt="Furniture Image">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <ul class="info-detail-list section container">
-            <li class="info-detail-item mb-32">
-                <h2 class="info-detail-heading sub-heading">Dimensions - Weight</h2>
-                <ul class="info-detail">
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
-                    </li>
-                </ul>
-                
-            </li>
-            <li class="info-detail-item mb-32">
-                <h2 class="info-detail-heading sub-heading">Engine - Gearbox</h2>
-                <ul class="info-detail">
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
-                    </li>
-                </ul>
-            </li>
-            <li class="info-detail-item mb-32">
-                <h2 class="info-detail-heading sub-heading">Exterior</h2>
-                <ul class="info-detail">
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
-                    </li>
-                </ul>
-            </li>
-            <li class="info-detail-item mb-32">
-                <h2 class="info-detail-heading sub-heading">Furniture</h2>
-                <ul class="info-detail">
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Khối lượng</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">6000kg</label> 
-                    </li>
-                    <li class="row">
-                        <label for="" class="info-detail-name col-lg-4 col-md-4 col-4">Chiều dài</label> 
-                        <label for="" class="info-detail-desc col-lg-8 col-md-8 col-8">5m</label> 
-                    </li>
-                </ul>
-            </li>
-        </ul>
 
-        <!-- banner bottom -->
-        <div class="banner-bottom" style="background-image: url('./image/productDetail/ss2.jpg');">
-        </div>
+
+        <!-- Services -->
+        <section class="services">
+            <header class="shopping-tool">
+              <h1 class="shopping-tool-title-header">Service</h1>
+            </header>
+            <div class="shopping-tool-wrapper">
+              <article class="shopping-tool-article">
+                <a href="" class="shopping-tool-link" title="Price">
+                  <img src="/image/Price.png" alt="" class="shopping-tool-icon" />
+                  <h1 class="shopping-tool-title">Price</h1>
+                  <p class="shopping-tool-content">
+                    Detailed price list of each model of Audi
+                  </p>
+                </a>
+              </article>
+              <article class="shopping-tool-article">
+                <a href="" class="shopping-tool-link" title="Price">
+                  <img
+                    src="/image/compare (1).png"
+                    alt=""
+                    class="shopping-tool-icon"
+                  />
+                  <h1 class="shopping-tool-title">CAR COMPARISON</h1>
+                  <p class="shopping-tool-content">
+                    Compare detailed information of each Audi model
+                  </p>
+                </a>
+              </article>
+              <article class="shopping-tool-article">
+                <a href="" class="shopping-tool-link" title="Price">
+                  <img src="/image/book.png" alt="" class="shopping-tool-icon" />
+                  <h1 class="shopping-tool-title">BOOK A TEST DRIVE</h1>
+                  <p class="shopping-tool-content">Book a test drive for Audi cars</p>
+                </a>
+              </article>
+            </div>
+          </section>
 
         <!-- Footer -->
         <div class="footer">
@@ -328,19 +358,26 @@
         const $ = document.querySelector.bind(document);
         const $$ = document.querySelectorAll.bind(document);
 
-        const infoDetailHeadings = $$('.info-detail-heading');
-        const infoDetailItems = $$('.info-detail-item');
-        const infoDetails = $$('.info-detail');
+        const tabs = $$('.tab-item');
+        const panes = $$('.tab-pane');
+
+        const tabActive = $('.tab-item.active');
+        const line = $('.tabs .line');
+        line.style.left = tabActive.offsetLeft +'px';
+        line.style.width = tabActive.offsetWidth +'px';
 
 
-        infoDetailHeadings.forEach((infoDetailHeading, index) => {
-            const infoDetailItem = infoDetailItems[index];
-            const infoDetail = infoDetails[index];
-            infoDetailHeading.onclick = function(){
+        tabs.forEach((tab, index) => {
+            const pane = panes[index];
+            tab.onclick = function(){
+                $('.tab-item.active').classList.remove('active');
+                $('.tab-pane.active').classList.remove('active');
                 
-                infoDetailItem.classList.toggle('active');
-                infoDetail.classList.toggle('active');
+                line.style.left = this.offsetLeft +'px';
+                line.style.width = this.offsetWidth +'px';
 
+                this.classList.add('active');
+                pane.classList.add('active');
             }
         });
     </script>

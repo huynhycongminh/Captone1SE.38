@@ -104,6 +104,11 @@ p {
     padding: 8px 12px;
 }
 
+.main-info-item.active a{
+    color: #000;
+    font-weight: 700;
+}
+
 .banner-top {
     background: center / cover no-repeat;
     padding-top: 10%;
