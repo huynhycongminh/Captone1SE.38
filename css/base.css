@@ -16,14 +16,14 @@
 }
 
 .banner-top {
-    padding-top: 10%;
+    padding-top: 12%;
     background: center / cover no-repeat;
     position: relative;
 }
 
 .banner-bottom {
     background: center / cover no-repeat;
-    padding-top: 16%;
+    padding-top: 18%;
 }
 
 .banner-heading {

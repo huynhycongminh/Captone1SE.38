@@ -102,7 +102,7 @@ html {
     display: block;
     position: relative;
     width: 90%;
-    border-bottom: 2px solid gray;
+    /* border-bottom: 2px solid gray; */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -113,7 +113,13 @@ html {
 }
 
 .info-detail-heading {
-    transition: all linear .2s;
+    border: none;
+    background-color: transparent;
+    transition: all linear .15s;
+}
+
+.info-detail-heading:focus {
+    outline: none;
 }
 
 .info-detail-heading:hover {
@@ -127,20 +133,34 @@ html {
     list-style: none;
     text-align: left;
     padding: 0 15px;
-    border: 1px solid gray;
     display: none;
 }
 
+.info-detail .row:nth-child(2n) {
+    background-color: rgb(238, 238, 238);
+}
+
+.info-detail .row:nth-child(2n+1) {
+    background-color: #FFFFFF;
+}
+
+/* .info-detail li label:nth-child(2n) {
+    background-color: rgb(201, 201, 201);
+}
+
+.info-detail li label:nth-child(2n+1) {
+    background-color: #FFFFFF;
+} */
+
+
 .info-detail-name {
     padding: 8px 16px;
-    border: 1px solid gray;
     margin-bottom: 0;
     font-weight: 800;
 }
 
 .info-detail-desc {
     padding: 8px 16px;
-    border: 1px solid gray;
     margin-bottom: 0;
 
 }
