@@ -18,26 +18,7 @@ html {
   opacity: 1;
 }
 
-.mb-32 {
-    margin-bottom: 32px;
-}
 
-.mb-64 {
-    margin-bottom: 64px;
-}
-
-.pl-12 {
-    padding-left: 16px;
-}
-
-.pr-12 {
-    padding-right: 16px;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 .main {
     background: #f1f1f1;
@@ -47,27 +28,7 @@ p {
     overflow: hidden;
 }
 
-.section {
-    padding: 60px 16px;
-}
 
-.section .heading{
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    text-align: center;
-}
-
-.section .sub-heading{
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 16px;
-}
-
-.section .description{
-    font-size: 24px;
-    text-align: left;
-}
 
 .main-info-list {
     list-style: none;
@@ -98,43 +59,27 @@ p {
     padding: 8px 12px;
 }
 
-.banner-top {
-    padding-top: 10%;
-    background: center / cover no-repeat;
-    position: relative;
+.add-car-compare {
 }
 
-.heading-func {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 48px;
-    color: #f1f1f1;
-    text-shadow: 8px 4px 2px rgba(0, 0, 0, 0.7);
-}
-
-.add-car {
-    padding-top: 60px;
-}
-
-.add-car-plus.selected {
+.add-car-compare-icon.selected {
     display: none;
 }
 
-.add-car-plus {
+.add-car-compare-icon {
     text-align: center;
 }
 
-.add-car-plus img{
+.add-car-compare-icon img{
     width: 60px;
 
 } 
 
-.add-car-plus img:hover {
+.add-car-compare-icon img:hover {
     opacity: 0.4;
     cursor: pointer;
 }
+
 
 .car-model {
     text-align: center;
@@ -190,8 +135,11 @@ p {
 }
 
 .info-detail {
+    font-size: 16px;
     list-style: none;
     text-align: left;
+    padding: 0 15px;
+    border: 1px solid gray;
     display: none;
 }
 
@@ -215,12 +163,6 @@ p {
 }
 
 
-/* Banner Bot */
-.banner-bottom {
-    background: center / cover no-repeat;
-    padding-top: 20%;
-}
-
 
 /* RESPONSIVE ON MOBILE */
 /* Mobile & Tablet */
@@ -236,11 +178,6 @@ p {
 
 /* Mobile*/
 @media (max-width: 46.1875em){ /*739px = 46.1875em*/
-    .banner-top {
-        padding-top: 20%;
-    }
-    .banner-bottom {
-        padding-top: 30%;
-    }
+    
 }
 

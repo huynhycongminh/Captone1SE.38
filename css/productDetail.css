@@ -18,32 +18,6 @@ html {
   opacity: 1;
 }
 
-.mb-32 {
-    margin-bottom: 32px;
-}
-
-.mb-64 {
-    margin-bottom: 64px;
-}
-
-.pl-12 {
-    padding-left: 16px;
-}
-
-.pr-12 {
-    padding-right: 16px;
-}
-
-.container.p-rl-0 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .main {
     background: #f1f1f1;
     min-height: 100vh;
@@ -52,30 +26,9 @@ p {
     overflow: hidden;
 }
 
-.section {
-    padding: 60px 16px;
-}
-
-.section .heading{
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    text-align: center;
-}
-
-.section .sub-heading{
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 16px;
-}
-
-.section .description{
-    font-size: 24px;
-    text-align: left;
-}
-
 .main-info-list {
     list-style: none;
+    font-size: 16px;
     margin-bottom: 0;
 }
 
@@ -109,14 +62,10 @@ p {
     font-weight: 700;
 }
 
-.banner-top {
-    background: center / cover no-repeat;
-    padding-top: 10%;
-}
-
 .name-model {
+    font-size: 40px;
     text-align: center;
-    padding-top: 32px;
+    padding: 20px 0;
 }
 
 .model-3D {
@@ -174,8 +123,11 @@ p {
 }
 
 .info-detail {
+    font-size: 16px;
     list-style: none;
     text-align: left;
+    padding: 0 15px;
+    border: 1px solid gray;
     display: none;
 }
 
@@ -197,12 +149,6 @@ p {
     display: block;
 }
 
-
-/* Banner Bot */
-.banner-bottom {
-    background: center / cover no-repeat;
-    padding-top: 20%;
-}
 
 
 /* RESPONSIVE ON MOBILE */

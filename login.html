@@ -6,44 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="shortcut icon" type="image/jpg" href="./image/logo.jpg"/>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/company.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/productDetail.css">
+    <link rel="stylesheet" href="./css/productImage.css">
+    <link rel="stylesheet" href="./css/carComparison.css">
+    <link rel="stylesheet" href="./css/priceList.css">
     <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/RegisterTestDrive.css">
 </head>
 <body>
     <div id="login">
         <img src="./image/bgLogin.jpeg" alt="Audi" class="background-login" style="height: 100vh;">
         <div class="login" class="grid wide">
             <img src="./image/audi-logo-login.jpg" alt="Logo Audi" class="login-img" >
-            <h1 class="heading">LOG IN</h1>
+            <h1 class="heading-form-login" style="color: #f1f1f1;">LOG IN</h1>
             <form action="" method="post" id="login-form" >
                 <div class="form-group" >
-                    <input id="username" rules="required" name="username" type="text" placeholder="Username" class="form-control">
-                    <span class="form-message"></span>
+                    <input id="username" required name="username" type="text" placeholder="Username" class="form-control">
                 </div>
                 <div class="form-group" >
-                    <input id="password" rules="required" name="password" type="password" placeholder="Password" class="form-control">
-                    <span class="form-message"></span>
+                    <input id="password" required name="password" type="password" placeholder="Password" class="form-control">
                 </div>
-                <div class="form-group rememberAcc" >
-                    <input id="rememberAcc" rules="required" name="rememberAcc" type="checkbox">
-                    <label for="rememberAcc" class="form-label">Remember me</label>
+                <div class="form-group" >
+                    <input id="rememberAcc" rules="required" name="rememberAcc" type="checkbox" class="rememberAcc-checkbox">
+                    <label for="rememberAcc" class="rememberAcc-label">Remember me</label>
                 </div>
-                <button class="form-submit">Login</button>
+                <button class="form-submit form-submit-login">Login</button>
             </form>
 
             <div class="forgot-password"><a href="">Forgot Password?</a></div>
         </div>
     </div>
-
-    <script src="./js/validate.js"></script>
-    <script>
-      // Dòng 152 và 182 bên file Validate.js
-      // Hàm xử lý submit dữ liệu - Nếu muốn submit mặc định của form thì xóa bỏ hàm này
-        var formLogin = new Validate('#login-form');
-        // Hàm xử lý submit dữ liệu
-        formLogin.onSubmit =  function(data){
-          // Xử lý dữ liệu nhập vào
-          console.log(data);
-        }
-    </script>
 </body>
 </html>

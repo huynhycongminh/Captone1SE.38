@@ -18,27 +18,6 @@ html {
   opacity: 1;
 }
 
-.mb-32 {
-    margin-bottom: 32px;
-}
-
-.mb-64 {
-    margin-bottom: 64px;
-}
-
-.pl-12 {
-    padding-left: 16px;
-}
-
-.pr-12 {
-    padding-right: 16px;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .main {
     background: #f1f1f1;
     min-height: 100vh;
@@ -52,29 +31,6 @@ p {
     background: center/ cover no-repeat;
 }
 
-.section {
-    padding: 60px 16px;
-}
-
-.section .heading{
-    font-size: 48px;
-    font-weight: 600;
-    margin-bottom: 16px;
-    text-align: center;
-}
-
-.section .sub-heading{
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 16px;
-    text-align: left;
-}
-
-.section .description{
-    font-size: 24px;
-    text-align: left;
-}
-
 .list-info {
     margin: 32px 0;
 }
@@ -84,8 +40,15 @@ p {
 }
 
 .item-info .sub-heading {
+    font-size: 28px;
     height: 72px;
 }
+
+.item-info .description {
+    font-size: 20px;
+    text-align: justify;
+}
+
 
 .item-info-img {
     width: 100%;

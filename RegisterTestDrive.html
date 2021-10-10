@@ -22,7 +22,16 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/registerTestDrive.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/company.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/productDetail.css">
+    <link rel="stylesheet" href="./css/productImage.css">
+    <link rel="stylesheet" href="./css/carComparison.css">
+    <link rel="stylesheet" href="./css/priceList.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/RegisterTestDrive.css">
 </head>
 <body>
     <!-- <div class="main"> -->
@@ -83,21 +92,19 @@
             </div>
         </div>
         <!-- Banner -->
-        <div class="banner">
+        <div class="banner-Register">
             <img src="./image/bannerRegisterTestDrive.jpg" width="100%" alt="Audi Banner">
             <h2 class="banner-text">Arrange A Test Drive</h2>
         </div>
         <!-- Form Register Test Drive -->
         <form action="" method="post" id="register-form" class="container wide">
-            <div class="heading">
-                <h1 class="heading">PLEASE COMPLETE INFORMATION BELLOW TO REGISTER</h1>
-            </div>
+            <h1 class="heading-form">PLEASE COMPLETE INFORMATION BELLOW TO REGISTER</h1>
             <div class="spacer"></div>
             <!-- FullName -->
             <div class="row">
                 <div class="form-group col-lg-12 col-md-12 col-12" >
                     <label for="fullname" class="form-label">Full Name</label>
-                    <input id="fullname" rules="required" name="fullname" type="text" placeholder="Eg: Joe Biden" class="form-control">
+                    <input id="fullname" required name="fullname" type="text" placeholder="Eg: Joe Biden" class="form-control">
                     <span class="form-message"></span>
                 </div>
             </div>
@@ -106,14 +113,14 @@
                 <!-- Phone Number -->
                 <div class="form-group Col-lg-6 col-md-6 col-12" >
                     <label for="phonenumber" class="form-label">Phone Number</label>
-                    <input id="phonenumber" rules="required|phone" name="phonenumber" type="text" placeholder="Eg:+84 123 456 789" class="form-control">
+                    <input id="phonenumber" required name="phonenumber" type="text" placeholder="Eg:+84 123 456 789" class="form-control">
                     <span class="form-message"></span>
                 </div>
         
                 <!-- Email -->
                 <div class="form-group Col-lg-6 col-md-6 col-12" >
                     <label for="email" class="form-label">Email</label>
-                    <input id="email" rules="required|email" name="text" type="text" placeholder="VD: email@domain.com" class="form-control">
+                    <input id="email" required name="text" type="text" placeholder="VD: email@domain.com" class="form-control">
                     <span class="form-message"></span>
                 </div>
             </div>
@@ -122,7 +129,7 @@
             <div class="row">
                 <div class="form-group col-lg-12 col-md-12 col-12" >
                     <label for="address" class="form-label">Address</label>
-                    <input id="address" rules="required" name="address" type="text" placeholder="Your Address" class="form-control">
+                    <input id="address" required name="address" type="text" placeholder="Your Address" class="form-control">
                     <span class="form-message"></span>
                 </div>
             </div>
@@ -131,7 +138,7 @@
                 <!-- Choose Vehicle Type -->
                 <div class="form-group Col-lg-6 col-md-6 col-12" >
                     <label for="vehicletype" class="form-label">Choose Vehicle Type</label>
-                    <select name="vehicletype"  id="vehicletype" rules="requiredSelect" class="form-control" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
+                    <select name="vehicletype" required id="vehicletype"  class="form-control" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
                         <option value="">All Vehicle Type</option>
                         <option value="Asia">Asia</option>
                         <option value="American">American</option>
@@ -142,7 +149,7 @@
                 <!-- Choose Model -->
                 <div class="form-group Col-lg-6 col-md-6 col-12" >
                     <label for="vehiclemodel" class="form-label">Choose Vehicle Model</label>
-                    <select name="vehiclemodel"  id="vehiclemodel" rules="requiredSelect" class="form-control" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
+                    <select name="vehiclemodel" required id="vehiclemodel"  class="form-control" style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
                         <option value="">All Vehicle Model</option>
                         <option value="Asia">Asia</option>
                         <option value="American">American</option>
@@ -288,17 +295,5 @@
         </div>
     <!-- </div> -->
 
-
-    <script src="./js/validate.js"></script>
-    <script>
-      // Dòng 152 và 182 bên file Validate.js
-      // Hàm xử lý submit dữ liệu - Nếu muốn submit mặc định của form thì xóa bỏ hàm này
-        var formRegister = new Validate('#register-form');
-        // Hàm xử lý submit dữ liệu
-        formRegister.onSubmit =  function(data){
-          // Xử lý dữ liệu nhập vào
-          console.log(data);
-        }
-    </script>
 </body>
 </html>

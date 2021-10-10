@@ -19,19 +19,6 @@ html {
   opacity: 1;
 }
 
-.mb-32 {
-    margin-bottom: 32px;
-}
-
-.mb-16 {
-    margin-bottom: 16px;
-}
-
-.container.p-rl-0 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
 .main {
     background: #f1f1f1;
     min-height: 100vh;
@@ -48,6 +35,7 @@ html {
 
 .main-info-list {
     list-style: none;
+    font-size: 16px;
     margin-bottom: 0;
 }
 
@@ -80,27 +68,11 @@ html {
     font-weight: 700;
 }
 
-.banner-top {
-    background: center / cover no-repeat;
-    position: relative;
-    padding-top: 10%;
-}
-
-.heading {
-    font-size: 48px;
-    color: #f1f1f1;
-    text-shadow: 8px 4px 2px rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 
 .tabs {
     /* display: flex; */
     position: relative;
-    margin: 16px 0;
+    margin: 32px 0;
 }
 
 .tabs .line {

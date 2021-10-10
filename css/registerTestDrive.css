@@ -32,7 +32,7 @@ html {
     overflow: hidden;
 }
 
-.banner {
+.banner-Register {
     /* height: calc(width / 3); */
     background: center / cover no-repeat;
     position: relative;
@@ -65,8 +65,8 @@ html {
     margin-bottom: 80px;
 }
 
-.heading {
-    font-size: 2.4rem;
+.heading-form {
+    font-size: 32px;
     text-align: center;
     margin-bottom: 36px;
 }
@@ -78,14 +78,11 @@ html {
     flex-direction: column;
 }
   
-.form-label,
-.form-message {
-    text-align: left;
-}
   
 .form-label {
+    text-align: left;
     font-weight: 700;
-    padding-bottom: 6px;
+    padding-bottom: 2px;
     line-height: 1.8rem;
     font-size: 1.4rem;
 }
@@ -103,39 +100,7 @@ html {
 .form-control:hover {
     border-color: #696969;
 }
-  
-.form-group.invalid .form-control {
-    border-color: #f33a58;
-}
-  
-.form-group.invalid .form-message {
-    color: #f33a58;
-}
-  
-.form-message {
-    font-size: 1.2rem;
-    line-height: 1.6rem;
-    padding: 4px 0 0;
-}
-  
-.form-submit {
-    outline: none;
-    background-color: #303333;
-    margin-top: 12px;
-    padding: 12px 16px;
-    font-weight: 600;
-    color: #fff;
-    border: none;
-    width: 100%;
-    font-size: 14px;
-    border-radius: 8px;
-    cursor: pointer;
-}
-  
-.form-submit:hover {
-    background-color: #8d8f8f;
-}
-  
+
 .spacer {
     margin-top: 36px;
 }
