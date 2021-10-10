@@ -191,6 +191,122 @@ html {
 
 
 
+.modal.open{
+    display: flex;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center; 
+    justify-content: center;
+    z-index: 111111111;
+    display: none;
+}
+
+.modal-container{
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 300px;
+    background-color: #fff;
+    position: relative;
+    animation: modalFadeIn ease .5s;
+}
+
+.modal-close{
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.modal-close:hover{
+    opacity: 0.8;
+}
+
+.modal-header{
+    display: block;
+    background-color: #585858;
+    color: #fff;
+    padding: 32px 16px;
+}
+
+.header-text {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+.search-box {
+    position: relative;
+}
+
+.modal-body-input{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.search-icon {
+    font-size: 20px;
+    color: #f1f1f1;
+    padding: 6px 24px;
+    border-radius: 8px;
+    background-color: #858585;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transition: all linear .2s;
+}
+
+.search-icon:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.modal-body{
+    /* margin: 16px; */
+    font-size: 15px;
+}
+
+.modal-body-label{
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+
+
+.suggestion-list {
+    list-style: none;
+    padding-left: 12px;
+    height: 200px;
+    overflow-y: scroll;
+    transition: all linear .15s;
+}
+
+.suggestion-item {
+    font-size: 18px;
+}
+
+.suggestion-item:hover {
+    background-color: #858585;
+    color: #f1f1f1;
+}
+
+
+
 /* RESPONSIVE ON MOBILE */
 /* Mobile & Tablet */
 @media (max-width: 63.9375em){ /*1023px = 63.9375em*/
