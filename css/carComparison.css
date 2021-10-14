@@ -114,15 +114,11 @@ html {
     display: block;
     position: relative;
     width: 90%;
-    border-bottom: 2px solid gray;
+    /* border-bottom: 2px solid gray; */
     left: 50%;
     transform: translateX(-50%);
 }
 
-
-.info-detail-item.active{
-    border-bottom: none;
-}
 
 .info-detail-heading {
     border: none;
@@ -134,19 +130,12 @@ html {
     outline: none;
 }
 
-.info-detail-heading:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
 .info-detail {
     font-size: 16px;
     list-style: none;
     text-align: left;
     padding: 0 15px;
-    /* border: 1px solid gray; */
-    display: none;
+    display: block;
 }
 
 .info-detail li:nth-child(2n+1) {
@@ -184,11 +173,6 @@ html {
     margin-bottom: 0;
 
 }
-
-.info-detail.active {
-    display: block;
-}
-
 
 
 .modal.open{
@@ -235,7 +219,7 @@ html {
     display: block;
     background-color: #585858;
     color: #fff;
-    padding: 32px 16px;
+    padding: 16px 16px 24px;
 }
 
 .header-text {
@@ -255,6 +239,8 @@ html {
     font-size: 16px;
     border: 1px solid #ccc;
     padding: 8px;
+    padding-right: 90px;
+    overflow: hidden;
 }
 
 .search-icon {

@@ -102,7 +102,6 @@ html {
     display: block;
     position: relative;
     width: 90%;
-    /* border-bottom: 2px solid gray; */
     left: 50%;
     transform: translateX(-50%);
 }
@@ -122,18 +121,12 @@ html {
     outline: none;
 }
 
-.info-detail-heading:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    opacity: 0.6;
-}
-
 .info-detail {
     font-size: 16px;
     list-style: none;
     text-align: left;
     padding: 0 15px;
-    display: none;
+    display: block;
 }
 
 .info-detail .row:nth-child(2n) {
@@ -163,10 +156,6 @@ html {
     padding: 8px 16px;
     margin-bottom: 0;
 
-}
-
-.info-detail.active {
-    display: block;
 }
 
 

@@ -341,25 +341,5 @@
         </div>
     <!-- </div> -->
 
-    <script>
-        const $ = document.querySelector.bind(document);
-        const $$ = document.querySelectorAll.bind(document);
-
-        const infoDetailHeadings = $$('.info-detail-heading');
-        const infoDetailItems = $$('.info-detail-item');
-        const infoDetails = $$('.info-detail');
-
-
-        infoDetailHeadings.forEach((infoDetailHeading, index) => {
-            const infoDetailItem = infoDetailItems[index];
-            const infoDetail = infoDetails[index];
-            infoDetailHeading.onclick = function(){
-                
-                infoDetailItem.classList.toggle('active');
-                infoDetail.classList.toggle('active');
-
-            }
-        });
-    </script>
 </body>
 </html>
