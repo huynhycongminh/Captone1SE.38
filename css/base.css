@@ -1,3 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #f5f5f5 !important;
+  overflow-x: hidden;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: inherit;
+  opacity: 1;
+}
+
+.main {
+    background: #f1f1f1;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
 .banner {
     overflow: hidden;
     padding-top: 44%;
@@ -24,6 +52,16 @@
 .banner-bottom {
     background: center / cover no-repeat;
     padding-top: 18%;
+}
+
+.heading {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.sub-heading{
+    font-size: 32px;
+    font-weight: 500;
 }
 
 .banner-heading {
@@ -69,6 +107,10 @@
 
 .mb-16 {
     margin-bottom: 16px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
 }
 
 .pl-12 {

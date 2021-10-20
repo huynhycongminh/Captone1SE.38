@@ -1,0 +1,91 @@
+.fa {
+    font-size: 24px;
+}
+
+.fa-circle-o {
+    color: #2f86eb;
+}
+
+.fa-check-circle {
+    color: #26b142;
+}
+
+.fa-times-circle {
+    color: #f13c14;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center; 
+    justify-content: center;
+    z-index: 111111111;
+    display: none;
+}
+
+.modal-container{
+    width: 900px;
+    max-width: calc(100% - 32px);
+    background-color: #fff;
+    position: relative;
+    animation: modalFadeIn ease .5s;
+}
+
+.modal-close{
+    color: #fff;
+    font-size: 24px;
+    padding: 8px 16px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.modal-close:hover{
+    opacity: 0.8;
+}
+
+.modal-header{
+    display: block;
+    background-color: #585858;
+    color: #fff;
+    padding: 16px;
+}
+
+.header-text {
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.modal-body{
+    font-size: 18px;
+    padding: 20px 32px;
+    max-height: 520px;
+    overflow-y: scroll;
+}
+
+.lbl-title {
+    display: inline-block;
+    min-width: 140px;
+    font-weight: bold;
+} 
+
+.confirm {
+    display: flex;
+    align-items: center;
+    justify-content: space-around !important;   
+}
+
+.btn {
+    width: 150px;
+    padding: 8px;
+}
