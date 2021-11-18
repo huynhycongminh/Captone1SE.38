@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Add New Product</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/adminListOfProduct.css">
+    <link rel="stylesheet" href="./css/adminListRegisterTestDrive.css">
+    <link rel="stylesheet" href="./css/adminAddNewProduct.css">
+</head>
+  <body>
+
+    <div class="header">
+        <div class="name-website">
+            <a href="">OSR&3D</a> 
+        </div>
+        
+        <nav class="navbar navbar-expand-lg" style="width: 100%; background-color: #636363">
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="menu-list navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="menu-item">
+                <a href="#">
+                  <img src="./image/adminListofProduct/cube_24px.png" alt="Storage">
+                  Storage Manager
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <img src="./image/adminListofProduct/traffic_jam_80px.png" alt="List Register">
+                  Product Manager
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#">
+                  <img src="./image/adminListofProduct/list.png" alt="List Register">
+                  Register Test Drive
+                </a>
+              </li>
+            </ul>
+            <ul class="info-list navbar-nav my-2 my-lg-0">
+              <li class="info-item message">
+                <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="info-item admin-account">
+                <a href="">
+                  <img src="./image/adminListofProduct/admin.png" alt="Admin Image" class="admin-img">
+                  Admin Account
+                </a>
+              </li>
+              <li class="info-item setting">
+                <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                    <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="heading mb-16">POST MANAGER</div>
+        <div class="box-content">
+          <div class="sub-heading mb-16">ADD NEW PRODUCT</div>
+          
+          <div class="row">
+            <div class="col-5">
+              <div class="input-info">
+                <label for="product-name">Product name:</label>
+                <input type="text" name="product-name" id="product-name">
+              </div>
+              <div class="input-info">
+                <label for="product-desc">Product description:</label>
+                <textarea name="product-desc" id="product-desc" cols="30" rows="8"></textarea>
+              </div>  
+            </div>
+            <div class="col-7">
+              <div class="input-info input-box">
+                <label for="product-img">Product images</label>
+                <div class="line"></div>
+                <div class="img-list img-box">
+                  <div class="img-item">
+                    <img src="https://www.freeiconspng.com/uploads/vehicle-icon-7.jpg" alt="Car Image">
+                  </div>
+                </div>
+                <input type="file" name="product-img" id="product-img">
+              </div> 
+              <div class="input-info input-box">
+                <label for="product-gallery">Product gallery</label>
+                <div class="line"></div>
+                <div class="gallery-list img-box">
+                  <div class="gallery-item">
+                    <img src="http://www.thewowstyle.com/wp-content/uploads/2015/02/Audi-cars-wallpaper.jpg" alt="Car Image">
+                  </div>
+                </div>
+                <input type="file" name="product-gallery" id="product-gallery">
+              </div>
+            </div>
+          </div>
+          <div class="price-list input-box  mt-4">
+            <h4 class="sub-title">Product Detail</h4>
+            <div class="line"></div>
+            <div class="input-info">
+              <label for="" style="font-weight: 600;">Price list of car models</label>
+              <table>
+                <tr>
+                  <th class="col-4"><p class="price-list-title">Model</p></th>
+                  <th class="col-4"><p class="price-list-title">Price</p></th>
+                  <th class="col-4"><p class="price-list-title">Quantity</p></th>
+                </tr>
+                <tr>
+                  <td class="col-4">
+                    <select name="product-data-model" id="product-data-model">
+                      <option>option 1</option>
+                      <option>option 2</option>
+                      <option>option 3</option>
+                      <option>option 4 </option>
+                      <option>option 5 </option>
+                    </select>
+                  </td>
+                  <td class="col-4">
+                    <input type="number" name="product-data-price" id="product-data-price">
+                  </td>
+                  <td class="col-4">
+                    <input type="number" name="product-data-quantity" id="product-data-quantity">
+                  </td>
+                </tr>
+              </table>
+            </div> 
+            
+          </div>
+          <div class="product-data input-box mt-4">
+            <h4 class="sub-title">Product data</h4>
+            <div class="line"></div>
+            <div class="input-info">
+              <div class="row">
+    
+                <div class="col-3" style="border-right: 1px solid #000;">
+                  <ul class="product-data-list">
+                    <li class="product-data-item active"><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i>Specification</a></li>
+                    <li class="product-data-item"><a href="#"><i class="fa fa-cogs" aria-hidden="true"></i>Engine - Gearbox</a></li>
+                    <li class="product-data-item"><a href="#"><i class="fa fa-car" aria-hidden="true"></i>Exterior</a></li>
+                    <li class="product-data-item"><a href="#"><i class="fa fa-reddit" aria-hidden="true"></i>Furniture</a></li>
+                  </ul>
+                </div>
+
+                <!-- Specification -->
+                <div class="col-9 product-data-input-list active">
+                  <div class="product-data-info">
+                    <label for="product-data-length">Length</label>
+                    <input type="text" name="product-data-length" id="product-data-length">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-width">Width</label>
+                    <input type="text" name="product-data-width" id="product-data-width">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-height">Height</label>
+                    <input type="text" name="product-data-height" id="product-data-height">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-long">Standard Long</label>
+                    <input type="text" name="product-data-long" id="product-data-long">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-weight">Weight</label>
+                    <input type="text" name="product-data-weight" id="product-data-weight">
+                  </div>
+                </div>
+                <!-- Specification -->
+
+                <!-- Engine - Gearbox -->
+                <div class="col-9 product-data-input-list ">
+                  <div class="product-data-info">
+                    <label for="product-data-engine">Engine</label>
+                    <input type="text" name="product-data-engine" id="product-data-engine">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-transmission">Transmission</label>
+                    <input type="text" name="product-data-transmission" id="product-data-transmission">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-cylinder-capacity">Cylinder Capacity</label>
+                    <input type="text" name="product-data-cylinder-capacity" id="product-data-cylinder-capacity">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-max-power">Maximum Power</label>
+                    <input type="text" name="product-data-max-power" id="product-data-max-power">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-max-speed">Maximum Speed</label>
+                    <input type="text" name="product-data-max-speed" id="product-data-max-speed">
+                  </div>
+                </div>
+                <!-- Engine - Gearbox -->
+
+                <!-- Exterior -->
+                <div class="col-9 product-data-input-list active">
+                  <div class="product-data-info">
+                    <label for="product-data-head-light">Head Light</label>
+                    <input type="text" name="product-data-head-light" id="product-data-head-light">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-parking-light">Parking Light</label>
+                    <input type="text" name="product-data-parking-light" id="product-data-parking-light">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-day-light">Day Light</label>
+                    <input type="text" name="product-data-day-light" id="product-data-day-light">
+                  </div>
+                </div>
+                <!-- Exterior -->
+
+                <!-- Furniture -->
+                <div class="col-9 product-data-input-list">
+                  <div class="product-data-info">
+                    <label for="product-data-steering-wheel">Steering Wheel</label>
+                    <input type="text" name="product-data-steering-wheel" id="product-data-steering-wheel">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-display">Display</label>
+                    <input type="text" name="product-data-display" id="product-data-display">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-technology">Technology</label>
+                    <input type="text" name="product-data-technology" id="product-data-technology">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-sound-connect">Sound Connect</label>
+                    <input type="text" name="product-data-sound-connect" id="product-data-sound-connect">
+                  </div>
+                  <div class="product-data-info">
+                    <label for="product-data-equipment">Equipment</label>
+                    <input type="text" name="product-data-equipment" id="product-data-equipment">
+                  </div>
+                </div>
+                <!-- Furniture -->
+
+
+              </div>
+            </div> 
+          </div>
+        </div>
+    </div>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

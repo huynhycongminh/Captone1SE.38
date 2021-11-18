@@ -71,6 +71,7 @@
     padding: 20px 32px;
     max-height: 520px;
     overflow-y: scroll;
+    /* background: url("../image/background1.jpg") center / cover no-repeat; */
 }
 
 .lbl-title {

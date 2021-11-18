@@ -10,6 +10,7 @@
     background-color: #636363;
     /* justify-content: space-between; */
     position: fixed;
+    z-index: 999;
 }
 
 .name-website {
