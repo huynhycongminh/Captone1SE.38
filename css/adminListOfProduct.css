@@ -166,9 +166,9 @@
 }
 
 .user-manual::after {
-    display: block;
     content: "";
     clear: both;
+    display: table;
 }
 
 /* Table model */
@@ -180,6 +180,9 @@
 tbody tr {
     user-select: none;
 }
+
+
+
 
 
 tbody tr:hover {
@@ -207,4 +210,23 @@ tbody tr:hover {
 .delete-button:hover {
     transform: scale(1.4);
     /* opacity: 0.6; */
+}
+
+.name-car {
+    max-width: 180px;
+    overflow: hidden;
+}
+
+
+.description-car {
+    max-width: 600px;
+    margin: 0;
+    overflow: hidden;
+    /* flex: 1; */
+    padding-right: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    text-align: left;
+    height: 80px;
 }
